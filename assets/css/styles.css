@@ -1,5 +1,5 @@
 body{
-    background-color: #F68E5F;
+    background-color: #456990;
     font-family: "Figtree", sans-serif;
 }
 
@@ -37,7 +37,8 @@ a{
 }
 
 .dropdown li:hover .submenu{
-    background: orange;
+    background: #F45B69;
+    box-shadow: 15px 15px 15px #6B2737;
     opacity: 100;
     visibility: visible;
 }
@@ -52,16 +53,26 @@ a{
     margin: 5% 35% 5% 35%;
     width: 20rem;
     height: 20rem;
-    background-color: #F5DD90;
-    box-shadow: 15px 15px 15px #f76c5e;
+    background-color: #E4FDE1;
+    box-shadow: 15px 15px 15px #114B5F;
 }
 
 .radio-list{
-    /* background-color: #586BA4; */
     display: flex;
     flex-direction: column;
 }
 
 .form-content{
     padding-top: 1rem;
+}
+
+.custom-button{
+    background-color: #114B5F;
+    padding: 10px 15px;
+    border: none;
+    color: whitesmoke;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 10px;
 }
