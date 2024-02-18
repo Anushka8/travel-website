@@ -6,56 +6,85 @@
     <title>Mumbai</title>
     <link href="assets/css/styles.css" rel="stylesheet" />
     <link rel="icon" type="image/x-icon" href="assets/images/mumbai_favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
   </head>
   <body>
-    <nav class="dropdown">
-      <ul>
-        <li><img class="navicon" src="assets/images/mumbai_icon.jpg"></li>
-        <li>Home</li>
-        <li>Where to stay?</li>
-        <li>
-          Where to Eat?
-          <ul class="submenu">
-            <li>Social Media</li>
-            <li>Email</li>
-          </ul>
-        </li>
-        <li>
-          What to do?
-          <ul class="submenu">
-            <li>Historical Tours</li>
-            <li>Cultural Tours</li>
-            <li>City Tour</li>
-          </ul>
-        </li>
-        <li>
-          What to see?
-          <ul class="submenu">
-            <li>Top Attractions</li>
-            <li>Parks</li>
-            <li>Architectural Sites</li>
-          </ul>
-        </li>
-      </ul>
-    </nav>
+    <div class="navbar">
+      <nav class="dropdown">
+        <ul>
+          <img class="navicon" src="assets/images/mumbai_icon.jpg">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Where to stay?</a></li>
+          <li>
+            <a href="#">Where to Eat?</a>
+          </li>
+          <li>
+            <a href="#">What to do?</a>
+            <ul class="submenu">
+              <li><a href="#">Historical Tours</a></li>
+              <li><a href="#">Cultural Tours</a></li>
+              <li><a href="#">City Tour</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">What to see?</a>
+            <ul class="submenu">
+              <li><a href="#">Top Attractions</a></li>
+              <li><a href="#">Parks</a></li>
+              <li><a href="#">Architectural Sites</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
     <div class="main">
         <h2>Please tell us about your visit:</h2>
         <hr>
-        <label>How many in your group?</label>
-        <input type="number" id="total" name="total" min="1" max="10"> 
-        <br>
-        <label>When did you Visit?</label>
-        <input type="date" id="total" name="total" min="1" max="10">
-        <br>
-        <label for="place">Favorite Place</label>
-        <select id="place">
-            <option value="arch" selected>Gateway of India</option>
-            <option value="park">Sanjay Gandhi National Park</option>
-            <option value="museum">Prince of Wale Museum</option>
-            <option value="drive">Marine Drive</option>
-        </select>
-        
+        <form onsubmit="return validateForm()" action="/submit-form" method="post">
+          <div class="form-content group">
+              <label>How many in your group?</label>
+              <input type="number" id="total" name="total" min="1" max="10"> 
+          </div>
 
+          <br>
+
+          <div class="form-content visit-date">
+              <label>When did you Visit?</label>
+              <input type="date" id="total" name="date">
+          </div>
+
+          <div class="form-content radio-list">
+              <h3>Favorite Places</h3>
+              <label class="form-item">
+                  <input type="radio" name="favorite_place" value="gateway_of_india">
+                  Gateway of India
+              </label>
+              <label class="form-item">
+                  <input type="radio" name="favorite_place" value="sgnp">
+                  Sanjay Gandhi National Park
+              </label>
+              <label class="form-item">
+                  <input type="radio" name="favorite_place" value="museum">
+                  Prince of Wale Museum
+              </label>
+              <label class="form-item">
+                  <input type="radio" name="favorite_place" value="marine_drive">
+                  Marine Drive
+              </label>
+          </div>
+          
+          <div class="form-content slidebar">
+              <label>Overall rate your visit:</label>
+              <input type="range" min="0" max="10" value="50" class="slider" id="myRange">
+          </div>
+
+          <div class="form-content">
+            <input type="submit" value="Submit">
+          </div>
+        </form>
     </div>
   </body>
 </html>
