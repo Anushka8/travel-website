@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mumbai</title>
+    <link href="assets/css/styles.css" rel="stylesheet" />
+    <link rel="icon" type="image/x-icon" href="assets/images/mumbai_favicon.ico">
+  </head>
+  <body>
+    <nav class="dropdown">
+      <ul>
+        <li><img class="navicon" src="assets/images/mumbai_icon.jpg"></li>
+        <li>Home</li>
+        <li>Where to stay?</li>
+        <li>
+          Where to Eat?
+          <ul class="submenu">
+            <li>Social Media</li>
+            <li>Email</li>
+          </ul>
+        </li>
+        <li>
+          What to do?
+          <ul class="submenu">
+            <li>Historical Tours</li>
+            <li>Cultural Tours</li>
+            <li>City Tour</li>
+          </ul>
+        </li>
+        <li>
+          What to see?
+          <ul class="submenu">
+            <li>Top Attractions</li>
+            <li>Parks</li>
+            <li>Architectural Sites</li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+    <div class="main">
+        <h2>Please tell us about your visit:</h2>
+        <hr>
+        <label>How many in your group?</label>
+        <input type="number" id="total" name="total" min="1" max="10"> 
+        <br>
+        <label>When did you Visit?</label>
+        <input type="date" id="total" name="total" min="1" max="10">
+        <br>
+        <label for="place">Favorite Place</label>
+        <select id="place">
+            <option value="arch" selected>Gateway of India</option>
+            <option value="park">Sanjay Gandhi National Park</option>
+            <option value="museum">Prince of Wale Museum</option>
+            <option value="drive">Marine Drive</option>
+        </select>
+        
+
+    </div>
+  </body>
+</html>
