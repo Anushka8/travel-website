@@ -1,5 +1,5 @@
 body{
-    background-color: #736B60;
+    background-color: #343F56;
     font-family: "Figtree", sans-serif;
     margin: 0%;
     overflow-x: hidden;
@@ -7,13 +7,17 @@ body{
 
 a{
     text-decoration: none;
-    color: white;
+    color: black;
 }
 
 .dropdown{
     display: flex;
     flex-direction: column;
     font-size: large;
+}
+
+.dropdown a{
+    color: white;
 }
 
 .dropdown ul{
@@ -70,32 +74,59 @@ a{
 } */
 
 .custom-button{
-    background-color: #114B5F;
-    padding: 10px 15px;
+    background-color: #F54748;
+    font-family: "Figtree", sans-serif;
+    padding: 8px 8px;
+    margin-bottom: 10%;
+    margin-left: 20%;
     border: none;
     color: whitesmoke;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    border-radius: 10px;
+    border-radius: 50px;
 }
 
 .container{
     background-image: url("../images/homepage_img.jpg");
     color: white;
-    /* background-color: black; */
     height: 100vh;
     width: 100vw;
 }
 
 .landing{
-    padding: 8rem 10rem 10rem 10rem;
+    padding: 6rem 10rem 10rem 10rem;
     width: 40%;
-    text-shadow: 1px 1px 2px black;
+    text-shadow: 2px 2px 2px black;
+}
+
+h1{
+    font-size: 8rem;
+    text-align: left;
+    margin: 0
+}
+
+h2{
+    margin: 0;
+}
+
+h3{
+    font-weight: 100;
+    text-align: left;
+    margin: 0
+}
+
+.heading{
+    font-size: 4rem;
+    font-weight: 600;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+    margin-left: 4rem;
+    margin-top: 2rem;
 }
 
 .navigate{
-    background-color: #736B60;
+    background-color: #343F56;
     height: 100vh;
     width: 100vw;
 }
@@ -107,18 +138,19 @@ a{
 }
 
 .grid{
-    background-color: #D5A021;
-    box-shadow: 15px 15px 15px #4B4237;
-    border-radius: 5px;
+    background-color: white;
+    box-shadow: 5px 5px 5px #4B4237;
+    border-radius: 15px;
     width: 15rem;
-    height: 20rem;
+    height: 21rem;
     margin-left: 1%;
     margin-right: 1%;
     padding: 2%;
 }
 
 .grid:hover{
-    box-shadow: 10px 10px 10px #aa8f6f;
+    box-shadow: 5px 5px 5px #F5E6CA;
+    /*  #aa8f6f */
 }
 
 .grid img{
@@ -128,4 +160,66 @@ a{
 
 .grid ul{
     list-style: none;
+}
+
+.main{
+    margin-left: 10rem;
+}
+
+.tab-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 5% 5% 0% 5%;
+    display: flex;
+}
+.tab-list li {
+    /* margin-right: 5px; */
+}
+/* Style the tab links */
+.tab-list a {
+    padding: 5px 10px;
+    margin-left: 10px;
+    display: block;
+    background-color: white;
+    color: black;
+    text-decoration: none;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px #4B4237;
+}
+.tab-list a:hover {
+    background-color: #ccc;
+}
+/* Style for the active tab */
+.tab-list a:target {
+    background-color: #F54748;
+    color: white;
+}
+
+.tab-content {
+    display: none;
+    margin: 1% 20% 5% 5%;
+    padding: 3% 0% 3% 3%;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px black;
+}
+/* Display the content when the tab is targeted */
+.tab-content:target {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+    grid-template-areas: 'first first-img'
+                        'second second-img'
+                        'third third-img' ;
+    height: auto;
+    background-color: white;
+}
+
+.tab-content img{
+    margin-left: 5rem;
+    width: 15rem;
+    height: 10rem;
+}
+
+.tab-content button{
+    margin-left: 0;
 }
