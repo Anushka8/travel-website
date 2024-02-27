@@ -40,38 +40,22 @@ a{
     top: 38px;
     transition: 0.5s opacity;
     visibility: hidden;
+    width:10rem;
+    text-align: left;
 }
 
 .dropdown li:hover .submenu{
-    background: #F45B69;
-    box-shadow: 15px 15px 15px #6B2737;
+    background: #FB9300;
+    box-shadow: 1px 1px 1px black;
+    border-radius: 10px;
     opacity: 100;
     visibility: visible;
 }
 
 .navicon{
-    width: 75px;
+    width: 100px;
     height: 60px;
 }
-
-/* .main{
-    padding: 3rem 2.5rem 10rem 2.5rem;
-    margin: 5% 35% 5% 35%;
-    width: 20rem;
-    height: 20rem;
-    color: white;
-    background-color: #456990;
-    box-shadow: 15px 15px 15px #114B5F;
-} */
-
-/* .radio-list{
-    display: flex;
-    flex-direction: column;
-}
-
-.form-content{
-    padding-top: 1rem;
-} */
 
 .custom-button{
     background-color: #F54748;
@@ -125,6 +109,10 @@ h3{
     margin-top: 2rem;
 }
 
+.main2 .heading{
+    margin-left: 15rem;
+}
+
 .navigate{
     background-color: #343F56;
     height: 100vh;
@@ -135,6 +123,11 @@ h3{
     margin: 10rem 10rem 10rem 8rem;
     display: flex;
     flex-direction: row;
+}
+
+.main2 .tiles{
+    margin-top: 5rem;
+    margin-left: 15rem;
 }
 
 .grid{
@@ -214,12 +207,82 @@ h3{
     background-color: white;
 }
 
-.tab-content img{
+.tab-content img, .hist-tab-content img{
     margin-left: 5rem;
     width: 15rem;
     height: 10rem;
+    box-shadow: 5px 5px 5px lightgray;
 }
 
 .tab-content button{
     margin-left: 0;
+}
+
+.historical-tours{
+    background-image: url("../images/elephanta-caves.jpg");
+    background-size: cover;
+    color: white;
+    height: 100vh;
+    width: 100vw;
+}
+
+.cultural-tours{
+    background-image: url("../images/gateway_india.jpg");
+    background-size: cover;
+    color: white;
+    height: 100vh;
+    width: 100vw;
+}
+
+.city-tours{
+    background-image: url("../images/cultural.jpg");
+    background-size: cover;
+    color: white;
+    height: 100vh;
+    width: 100vw;
+}
+
+.top-attractions{
+    background-image: url("../images/marine_drive.jpg");
+    background-size: cover;
+    color: white;
+    height: 100vh;
+    width: 100vw;
+}
+
+.parks{
+    background-image: url("../images/park.jpg");
+    background-size: cover;
+    color: white;
+    height: 100vh;
+    width: 100vw;
+}
+
+.arc-sites{
+    background-image: url("../images/architecture_sites.jpg");
+    background-size: cover;
+    color: white;
+    height: 100vh;
+    width: 100vw;
+}
+
+.historical-tours h1, .cultural-tours h1, .city-tours h1, .top-attractions h1, .parks h1, .arc-sites h1{
+    font-size: 5rem;
+    text-align: left;
+    margin: 0
+}
+
+.hist-tab-content {
+    display: grid;
+    margin: 5% 10% 5% 5%;
+    padding: 3% 0% 3% 3%;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px black;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+    grid-template-areas: 'first first-img'
+                        'second second-img'
+                        'third third-img' ;
+    height: auto;
+    background-color: white;
 }
