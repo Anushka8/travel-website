@@ -274,15 +274,20 @@ h3{
 
 .hist-tab-content {
     display: grid;
-    margin: 5% 10% 5% 5%;
-    padding: 3% 0% 3% 3%;
+    margin: 5% 15% 5% 15%;
+    padding: 5% 0% 3% 8%;
     border-radius: 10px;
     box-shadow: 5px 5px 5px black;
     grid-template-columns: 1fr 1fr;
-    grid-gap: 20px;
+    grid-gap: 5px;
     grid-template-areas: 'first first-img'
                         'second second-img'
                         'third third-img' ;
     height: auto;
     background-color: white;
+}
+
+table img{
+    width: 30px;
+    height: 30px;
 }
