@@ -15,40 +15,41 @@ ISTE-646 Foundations of Web Technologies II -->
     <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
   </head>
   <body>
-    <!-- Combine navbar and landing page to have a common background image -->
-    <div class="container">
       <!-- navigation bar with 6 elements and dropdown -->
-      <div class="navbar">
+    <div class="navbar">
         <nav class="dropdown">
-          <ul>
-            <img class="navicon" src="assets/images/mumbai_icon.svg">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="where_to_stay.html">Where to stay?</a></li>
-            <li>
-              <a href="where_to_eat.html">Where to Eat?</a>
-            </li>
-            <li>
-              <a href="what_to_do.html">What to do?</a>
-              <ul class="submenu">
-                <li><a href="historical_tours.html">Historical Tours</a></li>
-                <li><a href="cultural_tours.html">Cultural Tours</a></li>
-                <li><a href="city_tours.html">City Tour</a></li>
-              </ul>
-            </li>
-            <li>
-              <a href="what_to_see.html">What to see?</a>
-              <ul class="submenu">
-                <li><a href="top_attractions.html">Top Attractions</a></li>
-                <li><a href="park.html">Parks</a></li>
-                <li><a href="architecture_sites.html">Architectural Sites</a></li>
-              </ul>
-            </li>
-            <li>
-              <a href="references.html">References</a>
-            </li>
-          </ul>
-        </nav>
-      </div>
+        <ul>
+        <li><img class="navicon" src="assets/images/mumbai_icon.svg" alt="mumbai-logo"></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="where_to_stay.html">Where to stay?</a></li>
+        <li>
+            <a href="where_to_eat.html">Where to Eat?</a>
+        </li>
+        <li>
+            <a href="what_to_do.html">What to do?</a>
+            <ul class="submenu">
+            <li><a href="historical_tours.html">Historical Tours</a></li>
+            <li><a href="cultural_tours.html">Cultural Tours</a></li>
+            <li><a href="city_tours.html">City Tour</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="what_to_see.html">What to see?</a>
+            <ul class="submenu">
+            <li><a href="top_attractions.html">Top Attractions</a></li>
+            <li><a href="park.html">Parks</a></li>
+            <li><a href="architecture_sites.html">Architectural Sites</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="references.html">References</a>
+        </li>
+        <li>
+            <a href="grading.html">Grading</a>
+        </li>
+        </ul>
+    </nav>
+    </div>
 
     <!-- Four tiles to navigate throughout the website -->
     <div class="navigate">
@@ -195,11 +196,29 @@ ISTE-646 Foundations of Web Technologies II -->
                 <td>Reference link and image for Hanging Garden</td>
                 <td><img src="assets/images/park_2.jpg" alt="park-2"></td>
             </tr>
-            
         </table>
-        <footer>
-            <p>Anushka Churi</p>
+        <footer class="footer">
+            <div class="footer-content">
+                <div class="footer-section company-info">
+                    <h3>Anushka Churi</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus nec.</p>
+                </div>
+                <div class="footer-section contact-info">
+                    <h3>Contact Us</h3>
+                    <p>Phone: +1 234 567 8901</p>
+                    <p>Email: ac2224@rit.edu</p>
+                </div>
+                <div class="footer-section social-media">
+                    <h3>Follow Us</h3>
+                    <p>
+                        <a href="#">Facebook</a> |
+                        <a href="#">Twitter</a> |
+                        <a href="#">Instagram</a>
+                    </p>
+                </div>
+            </div>
         </footer>
     </div>
+    
   </body>
 </html>

@@ -16,7 +16,7 @@
       <div class="navbar">
         <nav class="dropdown">
           <ul>
-            <img class="navicon" src="assets/images/mumbai_icon.svg">
+            <li><img class="navicon" src="assets/images/mumbai_icon.svg" alt="mumbai_icon"></li>
             <li><a href="index.html">Home</a></li>
             <li><a href="where_to_stay.html">Where to stay?</a></li>
             <li>
@@ -41,6 +41,9 @@
             <li>
               <a href="references.html">References</a>
             </li>
+            <li>
+              <a href="grading.html">Grading</a>
+            </li>
           </ul>
         </nav>
       </div>
@@ -53,9 +56,14 @@
       </div>
     </div>
     <div class="hist-tab-content">
+      <!-- pop up for map -->
+      <div id="overlay" onclick="off()">
+        <div id="text"><a href="https://www.google.com/maps/place/Dr.+Bhau+Daji+Lad+Museum/@18.9789889,72.8348153,15z/data=!4m6!3m5!1s0x3be7ce5b428e70af:0x79efde6c140c2e05!8m2!3d18.9789889!4d72.8348153!16s%2Fm%2F06w4mwg?entry=ttu">
+          <img src="assets/images/bhau_daaji_map.png" alt="bhau_daaji_map"></a></div>
+      </div>
       <div class="first">
         <h2>Bhau Daji Lad Museum</h2>
-        <h3>Byculla, Mumbai</h3>
+        <h3 onclick="on()">Byculla, Mumbai</h3>
         <h3>Dr. Bhau Daji Lad Museum is the oldest museum in Mumbai. Situated in the vicinity of Byculla Zoo, Byculla East, it was originally established in 1855 as a treasure house of the decorative and industrial arts, and was later renamed in honour of Bhau Daji Lad</h3>
         <h3>&#9733;&#9733;&#9733;&#9733;&#9734;</h3>
         <button type="submit" value="submit" class="custom-button"><a href="https://www.bdlmuseum.org/">Book Now</a></button>
@@ -80,6 +88,14 @@
       </div>
       <div class="third-img"><img src="assets/images/top_attr_3.jpg" alt="zoo"></div>
     </div>
-    
+    <script>
+      function on() {
+        document.getElementById("overlay").style.display = "block";
+      }
+      
+      function off() {
+        document.getElementById("overlay").style.display = "none";
+      }
+    </script>
   </body>
 </html>
